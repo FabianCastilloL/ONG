@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #bdeccbb4;">
+    <div>
+        <ul class="barra">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+        </ul>
+    </div>
+    <!--formulario-->
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-5 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="text-center indigo-text">Formulario Contacto</h3>
+                    <hr>
+    
+                    <form>
+                        <div class="md-form">
+                            <i class="fas fa-user prefix indigo-text"></i>
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" class="form-control">
+    
+                        </div>
+    
+                        <div class="md-form">
+                            <i class="fas fa-envelope prefix indigo-text"></i>
+                            <label for="email">Ingresa correo electrónico</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+    
+                        <div class="md-form">
+                            <i class="fas fa-user prefix indigo-text"></i>
+                            <label for="rut">Ingrese rut</label>
+                            <input type="text" id="rut" class="form-control">
+    
+                        </div>
+    
+                        <div class="md-form">
+                            <i class="fas fa-phone prefix indigo-text"></i>
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control">
+    
+                        </div>
+    
+                        <div class="md-form">
+                            <i class="fas fa-map prefix indigo-text"></i>
+                            <label for="ciudad">Ciudad de residencia</label>
+                            <input type="text" id="ciudad" class="form-control">
+    
+                        </div>
+    
+                        <br>
+    
+                        <div class="md-form">
+                            <i class="fas fa-comments prefix indigo-text"></i>
+                            <label for="texto">Ingresa Comentarios</label>
+                            <textarea id="texto" class="md-textarea"></textarea>
+                        </div>
+    
+                        <div class="text-center">
+                            <div class="botones">
+                                <button type="submit" class="btn btn-indigo">Enviar</button>
+                                <button type="reset" class="btn btn-indigo">Limpiar</button>
+                            </div>
+                            
+                        </div>
+    
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

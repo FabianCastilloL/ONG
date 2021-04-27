@@ -3,4 +3,34 @@ body {
     font-family: 'Lora', serif;
 }
 
-img {}
+
+
+.barra {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .barra li {
+    float: left;
+  }
+  
+  .barra li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .barra li a:hover {
+    background-color: #111;
+  }
+
+  .botones button{
+      background-color: rgba(255, 0, 0, 0.397);
+  }
+
+
