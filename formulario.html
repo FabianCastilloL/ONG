@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/estilos.css"/>
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body style="background-color: #bdeccbb4;">
@@ -32,65 +33,45 @@
                 <div class="card-body">
                     <h3 class="text-center indigo-text">Formulario Contacto</h3>
                     <hr>
-    
-                    <form>
-                        <div class="md-form">
-                            <i class="fas fa-user prefix indigo-text"></i>
-                            <label for="nombre">Nombre Completo</label>
-                            <input type="text" id="nombre" class="form-control">
-    
-                        </div>
-    
-                        <div class="md-form">
-                            <i class="fas fa-envelope prefix indigo-text"></i>
-                            <label for="email">Ingresa correo electrónico</label>
-                            <input type="email" id="email" class="form-control">
-                        </div>
-    
-                        <div class="md-form">
-                            <i class="fas fa-user prefix indigo-text"></i>
-                            <label for="rut">Ingrese rut</label>
-                            <input type="text" id="rut" class="form-control">
-    
-                        </div>
-    
-                        <div class="md-form">
-                            <i class="fas fa-phone prefix indigo-text"></i>
-                            <label for="telefono">Telefono</label>
-                            <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="form-control">
-    
-                        </div>
-    
-                        <div class="md-form">
-                            <i class="fas fa-map prefix indigo-text"></i>
-                            <label for="ciudad">Ciudad de residencia</label>
-                            <input type="text" id="ciudad" class="form-control">
-    
-                        </div>
-    
-                        <br>
-    
-                        <div class="md-form">
-                            <i class="fas fa-comments prefix indigo-text"></i>
-                            <label for="texto">Ingresa Comentarios</label>
-                            <textarea id="texto" class="md-textarea"></textarea>
-                        </div>
-    
-                        <div class="text-center">
-                            <div class="botones">
-                                <button type="submit" class="btn btn-indigo">Enviar</button>
-                                <button type="reset" class="btn btn-indigo">Limpiar</button>
-                            </div>
-                            
-                        </div>
-    
-                    </form>
-    
+
+                    <form id="formulario_contacto" name="registration">
+
+                        <label for="nombre">Nombre</label>
+                    
+                        <input type="text" name="nombre" id="nombre" placeholder="John">
+                    
+                        <label for="email">Email</label>
+                    
+                        <input type="email" name="email" id="email" placeholder="john@doe.com">
+
+                        <label for="telefono">Telefono (opcional)</label>
+                    
+                        <input type="tel" name="telefono" id="telefono" placeholder="ejemplo 12345678">
+
+                        <label for="ciudad">Ciudad de residencia</label>
+                    
+                        <input type="ciudad" name="ciudad" id="ciudad" placeholder="limache">
+                
+                        <label for="comentario">Comentarios</label>
+
+                        <textarea name="comentario" id="comentario" placeholder="comentarios"></textarea>
+                        
+                        
+                        <button type="submit" id="guardar">Enviar</button>
+                        <button type="reset" id="limpiar">Limpiar</button>
+                    
+                      </form>
+                    
+
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="js/traducciones.js"></script>
+    <script src="js/formulario_jquery.js"></script>
 </body>
 
 </html>
